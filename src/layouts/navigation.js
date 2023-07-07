@@ -5,8 +5,9 @@ import { Link } from "react-router-dom";
 const Navigation = ({ children }) => {
   return (
     <>
+    <div className="header-navbar">
       <header>
-        Je suis un header
+        PortFolio
       </header>
       <ul>
         <li>
@@ -17,11 +18,12 @@ const Navigation = ({ children }) => {
           <Link to="/contact">Contact</Link>
         </li>
       </ul>
+    </div>
 
       {children}
 
       <footer>
-        Je suis un footer
+        Tout droit réservé
       </footer>
     </>
   );
