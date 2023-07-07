@@ -16,7 +16,7 @@ ul{
 }
 
 .header-navbar{
-  display: flex;
+  display:flex;
   justify-content: space-between;
   padding:10px;
 
@@ -48,10 +48,65 @@ h3{
 .card-project{
   width: 250px;
   height: 300px;
+  padding:10px;
   border: 3px solid black;
-  border-radius: 15px;;
+  border-radius: 15px;
+  opacity: 0.5;
+  transition: opacity 0.25s ease-in-out;
 }
 
 .card-project > img{
   width: 250px;
+}
+
+.container-experience{
+  display:flex;
+  justify-content: space-between;
+}
+
+
+.card-experience{
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  padding:10px;
+  border: 3px solid black;
+  border-radius: 15px;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+
+.card-experience > img {
+  width: 100px;
+  height: 100px;
+}
+
+.card-project:hover,
+.card-experience:hover{
+  opacity: 1;
+}
+
+a{
+  text-decoration: none;
+  color: #333;
+  font-size: 1.5em;
+  transition: font-size 0.3s;
+}
+
+a:hover{
+  font-size: 2em;
+}
+
+@media (max-width: 900px) {
+  .card-container{
+    flex-direction: column;
+  }
+
+  .header-navbar{
+    flex-direction: column;
+  }
+
+  .container-experience{
+    flex-direction: column;
+  }
 }

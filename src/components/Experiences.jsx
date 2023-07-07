@@ -3,12 +3,13 @@ const Experiences = ({dataExperiences}) => {
         <>
             <h3>Mes expériences professionnelles</h3>
 
-            <div>
+            <div className="container-experience">
             {dataExperiences.map(experience =>
-            <div>
-                {experience.position} -
-                {experience.company} -
-                {experience.duration} ans
+            <div className="card-experience">
+                <img src={experience.logo} alt="" srcset="" />
+                <p>{experience.position}</p>
+                <p>{experience.company}</p>
+                <p>{experience.duration} ans</p>
             </div>
             )}
             </div>
